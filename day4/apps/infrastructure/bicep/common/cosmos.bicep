@@ -18,7 +18,7 @@ resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2021-03-15' = {
     databaseAccountOfferType: 'Standard'
     locations: [
       {
-        locationName: resourceGroup().location
+        locationName: location
         failoverPriority: 0
         isZoneRedundant: false
       }

@@ -148,7 +148,7 @@ jobs:
 
     env:
       RESOURCE_GROUP_NAME: rg-scm-devday3
-      RESOURCE_GROUP_LOCATION: westeurope
+      RESOURCE_GROUP_LOCATION: eastus
       ENV_NAME: devd3
 
     steps:
@@ -237,7 +237,7 @@ jobs:
 
     env:
       RESOURCE_GROUP_NAME: rg-scm-testday3
-      RESOURCE_GROUP_LOCATION: westeurope
+      RESOURCE_GROUP_LOCATION: eastus
       ENV_NAME: testd3
 
     steps:

@@ -97,7 +97,7 @@ jobs:
     needs: [build-bicep, build-api]
     env:
       RESOURCE_GROUP_NAME: rg-scm-devday5
-      RESOURCE_GROUP_LOCATION: westeurope
+      RESOURCE_GROUP_LOCATION: eastus
       ENV_NAME: devd5
 
     steps:
@@ -153,7 +153,7 @@ jobs:
     needs: deploy-to-dev
     env:
       RESOURCE_GROUP_NAME: rg-scm-testday5
-      RESOURCE_GROUP_LOCATION: westeurope
+      RESOURCE_GROUP_LOCATION: eastus
       ENV_NAME: testd5
 
     steps:

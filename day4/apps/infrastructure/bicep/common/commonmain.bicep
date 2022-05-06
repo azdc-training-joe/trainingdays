@@ -41,7 +41,8 @@ param planWindowsSku string = 'B1'
 ])
 param planLinuxSku string = 'B1'
 
-param location string = 'switzerlandwest'
+param location string = 'swedencentral'
+
 
 var resourceTag = {
   Environment: env

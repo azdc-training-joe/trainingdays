@@ -18,8 +18,8 @@ jobs:
       - name: Create ResourceGroup names
         id: createResourceGroupNames
         run: |
-          echo "::set-output name=dev::${{ env.RG_DEV }}-${{ env.GITHUB_REPOSITORY_OWNER_PART }}"
-          echo "::set-output name=test::${{ env.RG_TEST }}-${{ env.GITHUB_REPOSITORY_OWNER_PART }}"
+          echo "::set-output name=dev::${{ env.RESOURCE_GROUP_NAME }}-${{ env.GITHUB_REPOSITORY_OWNER_PART }}"
+          echo "::set-output name=test::${{ env.RESOURCE_GROUP_NAME }}-${{ env.GITHUB_REPOSITORY_OWNER_PART }}"
 
       - name: Login via Azure CLI
         uses: azure/login@v1
